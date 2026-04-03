@@ -47,6 +47,13 @@ app.get("/", (req, res) => {
   res.send("Parking Server Running");
 });
 
+/*------------------------------
+Health Server
+------------------------------*/
+app.get("/health", (req, res) => {
+  res.status(200).send("Server is alive");
+});
+
 /* -----------------------------
 Update Slot (ESP32 sends here)
 ----------------------------- */
