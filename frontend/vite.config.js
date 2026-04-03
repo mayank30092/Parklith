@@ -1,7 +1,36 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+
+      manifest: {
+        name: "ParkLith Smart Parking",
+        short_name: "ParkLith",
+        description: "IoT Smart Parking System Dashboard",
+        theme_color: "#1f1f5d",
+        background_color: "#0f172a",
+        display: "standalone",
+        start_url: "/",
+
+        icons: [
+          {
+            src: "/frontend/public/P.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/frontend/public/P.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+      },
+    }),
+  ],
+});

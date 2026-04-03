@@ -71,7 +71,7 @@ function Dashboard() {
 
         <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
           <p className="text-gray-300 text-sm">Refresh Rate</p>
-          <p className="text-2xl font-bold">2 sec</p>
+          <p className="text-2xl font-bold">5 sec</p>
         </div>
 
         <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
