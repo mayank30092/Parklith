@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.logo-img {
+  width: 35px; /* mobile size */
+}
+
+@media (min-width: 768px) {
+  .desktop-title {
+    font-size: 3rem;
+  }
+
+  .d-h2 {
+    font-size: 2rem;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+
+  .desktop-box {
+    padding: 40px;
+  }
+
+  .desktop-text {
+    font-size: 2.5rem;
+  }
+}
